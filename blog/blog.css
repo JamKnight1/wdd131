@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background: white;
+}
+
+header {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-bottom: 1px solid orange;
+}
+nav {
+  display: flex;
+  justify-content: right;
+  gap: 1.5rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid orange;
+}
+
+nav a {
+  text-decoration: none;
+  color: red;
+  padding: 0.5rem;
+}
+main {
+  display: block;
+}
+
+#info {
+  text-align: right;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.book-title {
+  color: red;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.book-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 200px;
+}
+
+#review {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  border-top: 1px solid orange;
+  padding-top: 1rem;
+}
+@media (min-width: 700px) {
+  main {
+    display: flex;
+    gap: 2rem;
+  }
+
+  #info {
+    width: 180px;
+    text-align: right;
+    padding-right: 1rem;
+    border-right: 2px solid orange;
+  }
+
+  .content {
+    flex: 1;
+    text-align: left;
+  }
+
+  .book-title {
+    text-align: left;
+  }
+
+  .book-img {
+    margin: 0;
+  }
+
+  #review {
+    text-align: left;
+  }
+}
