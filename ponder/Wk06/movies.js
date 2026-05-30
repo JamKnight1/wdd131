@@ -38,7 +38,7 @@ const movies = [
         imgAlt: "Movie poster for 17 Miracles showing handcart pioneers walking through snow",
         ages: "12+",
         genre: "Historical/Religious",
-        stars: "⭐⭐⭐⭐"
+        stars: "⭐⭐⭐⭐" 
       }
     ];
 
