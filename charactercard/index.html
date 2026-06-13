@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Card</title>
+    <link rel="stylesheet" href="charactercard.css">
+    <script src="charactercard.js" defer></script>
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Character Card ">
+    <meta property="og:description" content="An average TTRPG character card">
+    <meta property="og:url" content="http://127.0.0.1:5500/charactercard/index.html">
+    <meta property="og:image" content="https://yourURLofSocialPreviewImageHere.png">
+
+<!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Put Page Title Here">
+    <meta name="twitter:description" content="Put Page Description Here">
+    <meta name="twitter:image" content="https://yourURLofSocialPreviewImageHere.png">
+
+<!-- One favicon (ICO works everywhere) -->
+    <link rel="icon" href="/favicon.ico">
+
+<!-- One Apple Touch Icon (iOS home screen) -->
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+</head>
+<body>
+    <div class="card">
+        <img class="image" src="images/King.png" alt="The King of Charlamange">
+
+        <h1 class="characterName"></h1>
+
+        <div class="stats">
+        <p><strong>Class:</strong> <span id="characterClass"></span></p>
+        <p><strong>Level:</strong> <span id="characterLevel"></span></p></p>
+        <p><strong>Health:</strong> <span id="characterHealth"></span></p>
+        </div>
+
+        <div class="buttons">
+        <button id="attackBtn">Attacked</button>
+        <button id="levelUpBtn">Level Up</button>
+        </div>
+
+        <p id="message"></p>
+    </div>
+
+    
+</body>
+</html>
