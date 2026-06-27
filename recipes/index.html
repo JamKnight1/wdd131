@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Books</title>
     <link rel="stylesheet" href="recipes.css" />
+    <script defer src="recipes.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,15 +42,15 @@
     </header>
 
     <div class="search-container">
-    <form action="/search-results-page" method="GET" role="search">
+    <form id= "search-form" action="/search-results-page" method="GET" role="search">
         <label for="site-search"></label>
         <input type="search" id="site-search" name="q" placeholder="Find a Recipe" required>
         <button type="submit"><img src="images/search.svg" alt="Search"></button>
     </form>
     </div>
 
-    <article class="recipe-card">
-        <img src="images/apple-crisp.jpg" class="recipe-img" alt="Apple Crisp">
+     <div id="recipe-card"></div>
+        <!--<img src="images/apple-crisp.jpg" class="recipe-img" alt="Apple Crisp">
 
         <div class="recipe-info">
         <span class="tag">Dessert</span>
@@ -70,7 +71,7 @@
     
         <p class="description">This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
         </div>
-    </article>
+    </article> -->
 </body>
     <footer>    
         
