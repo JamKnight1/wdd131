@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Tracker</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script defer src="tracker.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html">Home</a>
+        <a href="active.html">Actively playing </a>
+        <a href="finished.html">Finished</a>
+    </header>
+    <div class="title-card">
+        <div class="text-overlay">
+        <h1>Game Tracker</h1>
+        <p>Having trouble keeping track of what you've played?</p>
+        <p>Find your favorite games and track whether they're finished or on the way there!</p></div>
+        <img src="images/title-card.jpg" alt="banner of video games">
+    </div>
+
+    <h2>Find your game:</h2>
+    <div class="search-container">
+    <form id= "search-form" action="/search-results-page" method="GET" role="search">
+        <label for="site-search"></label>
+        <input type="search" id="site-search" name="q" placeholder="Find a Game" required>
+        <button type="submit"><img src="images/search.svg" alt="Search"></button>
+    </form>
+    </div>
+
+    <div id="game-card"></div>
+    
+</body>
+</html>

@@ -1,0 +1,120 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: goldenrod;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background-color: #444;
+}
+.title-card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+.title-card img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    
+}
+.text-overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    font-size: xx-large;
+    color: white;
+}
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.search-container form {
+    display: flex;
+    width: 80%;
+    max-width: 800px;
+}
+
+.search-container input[type="search"] {
+    flex: 1 ;
+    height: 40px;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.search-container button {
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    border: 1px solid #ccc;
+    background: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-container button img {
+    width: 20px;
+    height: 20px;
+}
+
+.game-card{
+    background-color: white;
+border: 1px solid white;
+    border-radius: 6px;
+
+    padding: 1rem;
+    margin-bottom: 2rem;
+    
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+
+    font-family: 'Courier New', Courier, monospace;
+}
+.game-card h2{
+    color: goldenrod;
+}
+.game-img{
+    width: 500px;
+    height: auto;
+    flex-shrink: 0;
+}
+.new-page-heading{
+    text-align: center;
+    color: white;
+}
+@media (max-width: 700px) {
+    .game-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .game-info {
+        text-align: center;
+    }
+
+    .game-img {
+        width: 80%;
+        max-width: 300px;
+    }
+}
